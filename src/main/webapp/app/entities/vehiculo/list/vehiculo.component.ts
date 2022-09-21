@@ -15,7 +15,6 @@ import { ParseLinks } from 'app/core/util/parse-links.service';
 @Component({
   selector: 'jhi-vehiculo',
   templateUrl: './vehiculo.component.html',
-
 })
 export class VehiculoComponent implements OnInit {
   vehiculos?: IVehiculo[];

@@ -80,17 +80,17 @@
           <td>{{ venta.fecha | formatMediumDate }}</td>
           <td>
             <div *ngIf="venta.vehiculo">
-              <a [routerLink]="['/vehiculo', venta.vehiculo.id]">{{ venta.vehiculo.marcaName }} {{ venta.vehiculo.modeloName }}</a>
+              <a [routerLink]="['/vehiculo', venta.vehiculo.id, 'view']">{{ venta.vehiculo.id }}</a>
             </div>
           </td>
           <td>
             <div *ngIf="venta.cliente">
-              <a [routerLink]="['/cliente', venta.cliente.id]">{{ venta.cliente.firstName }} {{ venta.cliente.lastName }}</a>
+              <a [routerLink]="['/cliente', venta.cliente.id, 'view']">{{ venta.cliente.id }}</a>
             </div>
           </td>
           <td>
             <div *ngIf="venta.vendedor">
-              <a [routerLink]="['/vendedor', venta.vendedor.id]">{{ venta.vendedor.firstName }} {{ venta.vendedor.lastName }}</a>
+              <a [routerLink]="['/vendedor', venta.vendedor.id, 'view']">{{ venta.vendedor.id }}</a>
             </div>
           </td>
           <td class="text-end">

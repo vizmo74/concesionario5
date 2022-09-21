@@ -7,9 +7,9 @@ export interface IVenta {
   id: number;
   total?: number | null;
   fecha?: dayjs.Dayjs | null;
-  vehiculo?: IVehiculo | null;
-  cliente?: ICliente | null;
-  vendedor?: IVendedor | null;
+  vehiculo?: Pick<IVehiculo, 'id'> | null;
+  cliente?: Pick<ICliente, 'id'> | null;
+  vendedor?: Pick<IVendedor, 'id'> | null;
 }
 
 export type NewVenta = Omit<IVenta, 'id'> & { id: null };
