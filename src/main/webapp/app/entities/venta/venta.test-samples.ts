@@ -6,29 +6,36 @@ export const sampleWithRequiredData: IVenta = {
   id: 20448,
   total: 11440,
   fecha: dayjs('2022-09-18'),
-  vehiculo:
-
+  vehiculo: null,
+  cliente: null,
+  vendedor: null
 };
 
 export const sampleWithPartialData: IVenta = {
   id: 32725,
   total: 11474,
   fecha: dayjs('2022-09-19'),
-  vehiculo:
-  };
+  vehiculo: null,
+  cliente: null,
+  vendedor: null
+};
 
 export const sampleWithFullData: IVenta = {
   id: 56225,
   total: 71903,
   fecha: dayjs('2022-09-18'),
-  vehiculo:
+  vehiculo: null,
+  cliente: null,
+  vendedor: null
 };
 
 export const sampleWithNewData: NewVenta = {
   total: 41728,
   fecha: dayjs('2022-09-19'),
   id: null,
-  vehiculo:
+  vehiculo: null,
+  cliente: null,
+  vendedor: null
 };
 
 Object.freeze(sampleWithNewData);
