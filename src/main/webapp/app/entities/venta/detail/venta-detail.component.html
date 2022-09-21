@@ -25,19 +25,19 @@
         <dt><span jhiTranslate="concesionario5App.venta.vehiculo">Vehiculo</span></dt>
         <dd>
           <div *ngIf="venta.vehiculo">
-            <a [routerLink]="['/vehiculo', venta.vehiculo.id, 'view']">{{ venta.vehiculo.id }}</a>
+            <a [routerLink]="['/vehiculo', venta.vehiculo.id, 'view']">{{ venta.vehiculo.marcaName }} {{ venta.vehiculo.modeloName }}</a>
           </div>
         </dd>
         <dt><span jhiTranslate="concesionario5App.venta.cliente">Cliente</span></dt>
         <dd>
           <div *ngIf="venta.cliente">
-            <a [routerLink]="['/cliente', venta.cliente.id, 'view']">{{ venta.cliente.id }}</a>
+            <a [routerLink]="['/cliente', venta.cliente.id, 'view']">{{ venta.cliente.firstName }} {{ venta.cliente.lastName }}</a>
           </div>
         </dd>
         <dt><span jhiTranslate="concesionario5App.venta.vendedor">Vendedor</span></dt>
         <dd>
           <div *ngIf="venta.vendedor">
-            <a [routerLink]="['/vendedor', venta.vendedor.id, 'view']">{{ venta.vendedor.id }}</a>
+            <a [routerLink]="['/vendedor', venta.vendedor.id, 'view']">{{ venta.vendedor.firstName }} {{ venta.vendedor.lastName }}</a>
           </div>
         </dd>
       </dl>
